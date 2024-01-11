@@ -1,0 +1,8 @@
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.csproj.AssemblyReference.cache
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.AssemblyInfoInputs.cache
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.AssemblyInfo.cs
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.csproj.CoreCompileInputs.cache
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.MvcApplicationPartsAssemblyInfo.cache
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cache
+/Users/pang/Desktop/Web Development/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cs
