@@ -22,9 +22,14 @@ namespace COMP2139_labs.Controllers
         {
             return View();
         }
-        public IActionResult Details()
+        public IActionResult Details(int id)
         {
+            var project = new Project { ProjectId = id, Name = "Project " + id, Description = "Description of project " + id };
             return View();
+        }
+        public IActionResult Create(Project project)
+        {
+            return RedirectToAction("Index");
         }
 
     }
