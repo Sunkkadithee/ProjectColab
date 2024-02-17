@@ -9,6 +9,7 @@ namespace COMP2139_labs.Models
         [Key]
         public int ProjectId { get; set; }
 
+
         [Required]
         public required string Name { get; set; }
 
