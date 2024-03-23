@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/wwwroot/js/projectComment.js",
+      "PackagePath": "staticwebassets/js/projectComment.js"
+    },
+    {
       "Id": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

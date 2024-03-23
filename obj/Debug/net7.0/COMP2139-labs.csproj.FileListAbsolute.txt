@@ -1,65 +1,3 @@
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/appsettings.Development.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/appsettings.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.staticwebassets.runtime.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.deps.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.runtimeconfig.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.dll
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.pdb
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.csproj.AssemblyReference.cache
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.GeneratedMSBuildEditorConfig.editorconfig
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.AssemblyInfoInputs.cache
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.AssemblyInfo.cs
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.csproj.CoreCompileInputs.cache
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.MvcApplicationPartsAssemblyInfo.cache
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cache
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cs
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/staticwebassets/msbuild.COMP2139-labs.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/staticwebassets/msbuild.build.COMP2139-labs.props
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.COMP2139-labs.props
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.COMP2139-labs.props
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/staticwebassets.pack.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/staticwebassets.build.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/staticwebassets.development.json
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/scopedcss/bundle/COMP2139-labs.styles.css
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/scopedcss/projectbundle/COMP2139-labs.bundle.scp.css
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.dll
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/refint/COMP2139-labs.dll
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.pdb
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.genruntimeconfig.cache
-/Users/pang/Desktop/Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/ref/COMP2139-labs.dll
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/appsettings.Development.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/appsettings.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/COMP2139-labs.staticwebassets.runtime.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/COMP2139-labs
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/COMP2139-labs.deps.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/COMP2139-labs.runtimeconfig.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/COMP2139-labs.dll
-/Users/pang/Desktop/COMP2139-Wednesday-main/bin/Debug/net7.0/COMP2139-labs.pdb
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.csproj.AssemblyReference.cache
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.GeneratedMSBuildEditorConfig.editorconfig
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.AssemblyInfoInputs.cache
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.AssemblyInfo.cs
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.csproj.CoreCompileInputs.cache
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.MvcApplicationPartsAssemblyInfo.cache
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cache
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cs
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/staticwebassets/msbuild.COMP2139-labs.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/staticwebassets/msbuild.build.COMP2139-labs.props
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.COMP2139-labs.props
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.COMP2139-labs.props
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/staticwebassets.pack.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/staticwebassets.build.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/staticwebassets.development.json
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/scopedcss/bundle/COMP2139-labs.styles.css
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/scopedcss/projectbundle/COMP2139-labs.bundle.scp.css
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.dll
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/refint/COMP2139-labs.dll
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.pdb
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/COMP2139-labs.genruntimeconfig.cache
-/Users/pang/Desktop/COMP2139-Wednesday-main/obj/Debug/net7.0/ref/COMP2139-labs.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/appsettings.Development.json
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/appsettings.json
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.staticwebassets.runtime.json
@@ -69,6 +7,10 @@
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/COMP2139-labs.pdb
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Humanizer.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Build.dll
@@ -90,7 +32,11 @@
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.NET.StringTools.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -113,6 +59,8 @@
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/NuGet.Protocol.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/NuGet.Versioning.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/SendGrid.dll
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/StarkbankEcdsa.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/System.CodeDom.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/System.Composition.AttributedModel.dll
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/bin/Debug/net7.0/System.Composition.Convention.dll
@@ -274,6 +222,7 @@
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.AssemblyInfoInputs.cache
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.AssemblyInfo.cs
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.csproj.CoreCompileInputs.cache
+/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.MvcApplicationPartsAssemblyInfo.cs
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.MvcApplicationPartsAssemblyInfo.cache
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cache
 /Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/Debug/net7.0/COMP2139-labs.RazorAssemblyInfo.cs
