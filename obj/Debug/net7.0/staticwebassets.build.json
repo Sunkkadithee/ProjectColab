@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Iof1ENJshcLyyfR/h1vghuPwEivALgyPM32u9RqKjzg=",
+  "Hash": "BuRQd4ama+CG0KbU1hWVwG8htxgGfEzHl0Imc11IOZg=",
   "Source": "COMP2139-labs",
   "BasePath": "_content/COMP2139-labs",
   "Mode": "Default",
@@ -1122,12 +1122,12 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/wwwroot/js/projectComment.js",
+      "Identity": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/wwwroot/js/projectComments.js",
       "SourceId": "COMP2139-labs",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/wwwroot/",
       "BasePath": "_content/COMP2139-labs",
-      "RelativePath": "js/projectComment.js",
+      "RelativePath": "js/projectComments.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,7 +1136,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/projectComment.js"
+      "OriginalItemSpec": "wwwroot/js/projectComments.js"
     },
     {
       "Identity": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/wwwroot/js/site.js",

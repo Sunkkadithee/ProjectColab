@@ -1,28 +1,21 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace COMP2139_labs.Areas.ProjectManagement.Models
 {
     public class ProjectComment
     {
-        [Key]
         public int ProjectCommentId { get; set; }
 
         [Required]
-        [Display(Name = "Comment")]
-        [StringLength(500, ErrorMessage = "Project Comments cannot exceed 500 characters.")]
+        [StringLength(500, ErrorMessage = "Comment cannot exceed 500 characters.")]
         public string? Content { get; set; }
 
-        [Display(Name = "Posted Date")]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [DataType(DataType.Date)]
-        public DateTime DatePosted { get; set; }
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:mm:ss}", ApplyFormatInEditMode = true)]
+        public DateTime CreatedDate { get; set; }
 
-        // Foreign key
-        public int ProjectId { get; set; }
+        public int ProjectId { get; set; } // Changed from "projectId" to "ProjectId" to match casing
 
-        // Navigation Property
-        public Project Project { get; set; }
+        public Project? project { get; set; }
     }
 }
