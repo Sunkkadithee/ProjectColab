@@ -1,31 +1,32 @@
-﻿using System;
+﻿using SendGrid.Helpers.Mail;
 using SendGrid;
+
 using Microsoft.AspNetCore.Identity.UI.Services;
-using SendGrid.Helpers.Mail;
 
-
-namespace COMP2139_labs.Services
+public class EmailSender : IEmailSender
 {
-	public class EmailSender : IEmailSender
-	{
 
-		private readonly string _sendGridKey;
-		public EmailSender(IConfiguration configuration)
-		{
-			_sendGridKey = configuration["SendGrid:ApiKey"];
-		}
+    private readonly IConfiguration _configuration;
 
-		public async Task SendEmailAsync(string email, string subject, string htmlMessage)
-		{
-			var client = new SendGridClient(_sendGridKey);
-			var from = new EmailAddress("pornpajee.sunkkadithee@georgebrown.ca");
-			var to = new EmailAddress(email);
-			var msg = MailHelper.CreateSingleEmail(from, to, subject, "", htmlMessage);
-			await client.SendEmailAsync(msg);
+    public EmailSender(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
 
+    public Task SendEmailAsync(string email, string subject, string htmlMessage)
+    {
+        return ConfigSendGridAsync(email, subject, htmlMessage);
+    }
 
-		}
-		
-	}
+    private Task ConfigSendGridAsync(string email, string subject, string htmlMessage)
+    {
+        var apiKey = _configuration["SendGrid:ApiKey"];
+        var client = new SendGridClient(apiKey);
+        var from = new EmailAddress("teimur.terchyyev@georgebrown.ca","Teimur");
+        var to = new EmailAddress(email);
+        var msg = MailHelper.CreateSingleEmail(from, to, subject, "", htmlMessage);
+        return client.SendEmailAsync(msg);
+    }
 }
+
 

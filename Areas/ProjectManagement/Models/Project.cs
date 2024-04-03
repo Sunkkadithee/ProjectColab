@@ -13,10 +13,12 @@ namespace COMP2139_labs.Areas.ProjectManagement.Models
         [StringLength(100, ErrorMessage = "Project name cannot exceed 100 characters.")]
         public required string Name { get; set; }
 
+
         [Display(Name = "Project Description")]
         [DataType(DataType.MultilineText)]
         [StringLength(500, ErrorMessage = "Project Description cannot exceed 500 characters.")]
         public string? Description { get; set; }
+
 
         [Display(Name = "Start Date")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
@@ -31,6 +33,7 @@ namespace COMP2139_labs.Areas.ProjectManagement.Models
         [Required]
         [Display(Name = "Project Status")]
         [StringLength(20, ErrorMessage = "Project Status cannot exceed 20 characters.")]
+
         public string Status { get; set; }
 
         public List<ProjectTask> Tasks { get; set; }

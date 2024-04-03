@@ -8,6 +8,7 @@
                 commentsHtml += '<div class="card mb-3">';
                 commentsHtml += '<div class="card-body">';
                 commentsHtml += '<p class="card-text">' + data[i].content + '</p>';
+                commentsHtml += '<span>Posted on: ' + new Date(data[i].createdDate).toLocaleString() + '</span>';
                 commentsHtml += '</div>';
                 commentsHtml += '</div>';
             }

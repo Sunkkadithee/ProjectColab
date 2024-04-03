@@ -142,23 +142,39 @@ namespace Comp_2139.Areas.ProjectManagement.Controllers
             return NotFound();
         }
 
-        [HttpGet("Search/{searchString?}")]
+        //[HttpGet("Search")]
+        //public async Task<IActionResult> Search(int? projectId, string searchString)
+        //{
+        //    // var projectQuery = from p in _context.Projects select p;
+
+        //    var taskQuery = _context.ProjectTasks.AsQueryable();
+
+
+        //    if (!String.IsNullOrEmpty(searchString))
+        //    {
+        //        taskQuery = taskQuery.Where(p => p.Title.Contains(searchString) || p.Description.Contains(searchString));
+        //    }
+
+        //    var tasks = await taskQuery.ToListAsync();
+        //    ViewBag.projectId = projectId; // To keep track of the current project 
+        //    return View("Index", tasks); // Return index View to Display Results
+        //}
+        [HttpGet("Search")]
         public async Task<IActionResult> Search(int? projectId, string searchString)
         {
+            // var projectQuery = from p in _context.Projects select p;
+
             var taskQuery = _context.ProjectTasks.AsQueryable();
-            // if projectId was passed
-            if (projectId.HasValue)
+
+
+            if (!String.IsNullOrEmpty(searchString))
             {
-                taskQuery = taskQuery.Where(t => t.ProjectId == projectId.Value);
-            }
-            if (!string.IsNullOrEmpty(searchString))
-            {
-                taskQuery = taskQuery.Where(t => t.Title.Contains(searchString) || t.Description.Contains(searchString));
+                taskQuery = taskQuery.Where(p => p.Title.Contains(searchString) || p.Description.Contains(searchString));
             }
 
             var tasks = await taskQuery.ToListAsync();
-            ViewBag.ProjectId = projectId;
-            return View("Index", tasks);
+            ViewBag.projectId = projectId; // To keep track of the current project 
+            return View("Index", tasks); // Return index View to Display Results
         }
 
 

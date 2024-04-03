@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using COMP2139_labs.Data;
-using COMP2139_labs.Services;
 using COMP2139_labs.Areas.ProjectManagement.Models;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 

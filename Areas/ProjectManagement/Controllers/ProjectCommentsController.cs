@@ -1,9 +1,11 @@
 ﻿using COMP2139_labs.Areas.ProjectManagement.Models;
 using COMP2139_labs.Data;
+using COMP2139_Labs.Areas.ProjectManagement.Models;
+using COMP2139_Labs.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace COMP2139_labs.Areas.ProjectManagement.Controllers
+namespace COMP2139_Labs.Areas.ProjectManagement.Controllers
 {
     [Area("ProjectManagement")]
     [Route("[area]/[controller]/[action]")]

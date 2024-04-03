@@ -8,6 +8,7 @@ namespace COMP2139_labs.Areas.ProjectManagement.Models
 
         [Required]
         [StringLength(500, ErrorMessage = "Comment cannot exceed 500 characters.")]
+
         public string? Content { get; set; }
 
         [DataType(DataType.DateTime)]

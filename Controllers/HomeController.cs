@@ -23,7 +23,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult GeneralSearch(string searchType, string searchString)
+    /*public IActionResult GeneralSearch(string searchType, string searchString)
     {
         if (searchType == "Projects")
         {
@@ -36,15 +36,37 @@ public class HomeController : Controller
 
         return RedirectToAction("Index", "Home");
     }
+    */
 
-    public IActionResult NotFound(int statusCode)
+
+    //[HttpGet]
+    //public IActionResult GeneralSearch(string searchType, string searchString)
+    //{
+    //    // Assuming "Task" controller is correctly named. Adjust if it has a different name.
+    //    var controllerName = searchType == "Projects" ? "Project" : searchType == "Tasks" ? "Tasks" : "Home";
+    //    var actionName = "Search";
+
+    //    return RedirectToAction(actionName, controllerName, new { area = "ProjectManagement", searchString });
+    //}
+    //public IActionResult NotFound(int statusCode)
+    //{
+    //    if(statusCode == 404)
+    //    {
+    //        return View("NotFound");
+    //    }
+    //    return View("Error");
+    //}
+
+    [HttpGet]
+    public IActionResult GeneralSearch(string searchType, string searchString)
     {
-        if(statusCode == 404)
-        {
-            return View("NotFound");
-        }
-        return View("Error");
+        // Assuming "Task" controller is correctly named. Adjust if it has a different name.
+        var controllerName = searchType == "Projects" ? "Project" : searchType == "Task" ? "Task" : "Home";
+        var actionName = "Search";
+
+        return RedirectToAction(actionName, controllerName, new { area = "ProjectManagement", searchString });
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

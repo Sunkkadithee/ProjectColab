@@ -139,22 +139,48 @@ namespace COMP2139_labs.Areas.ProjectManagement.Controllers
             return NotFound();
         }
 
-        [HttpPost("Search/{searchString?}")]
+        //[HttpGet("Search/{searchString?}")]
+        //public async Task<IActionResult> Search(string searchString)
+        //{
+        //    var projectQuery = from p
+        //                       in _context.Projects
+        //                       select p;
+        //    bool searchPerformed = !String.IsNullOrEmpty(searchString);
+
+        //    if (searchPerformed)
+        //    {
+        //        projectQuery = projectQuery.Where(p =>
+        //        p.Name.Contains(searchString) ||
+        //        p.Description.Contains(searchString));
+        //    }
+
+        //    var projects = await projectQuery.ToListAsync();
+        //    ViewData["SearchPerformed"] = searchPerformed;
+        //    ViewData["SearchString"] = searchString;
+
+        //    return View("Index", projects); // Reuse index View to Display Results
+        //}
+
+        [HttpGet("Search/{searchString?}")]
         public async Task<IActionResult> Search(string searchString)
         {
-            var projectQuery = from p in _context.Projects
+            var projectQuery = from p
+                               in _context.Projects
                                select p;
-            bool seaarchPerformed = !String.IsNullOrEmpty(searchString);
+            bool searchPerformed = !String.IsNullOrEmpty(searchString);
 
-            if (seaarchPerformed)
+            if (searchPerformed)
             {
-                projectQuery = projectQuery.Where(p => p.Name.Contains(searchString)
-                                                        || p.Description.Contains(searchString));
+                projectQuery = projectQuery.Where(p =>
+                p.Name.Contains(searchString) ||
+                p.Description.Contains(searchString));
             }
+
             var projects = await projectQuery.ToListAsync();
-            ViewData["SearchPerformed"] = seaarchPerformed;
+            ViewData["SearchPerformed"] = searchPerformed;
             ViewData["SearchString"] = searchString;
-            return View("Index", projects);
+
+            return View("Index", projects); // Reuse index View to Display Results
         }
 
     }
