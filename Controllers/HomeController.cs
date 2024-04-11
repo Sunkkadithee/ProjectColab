@@ -23,48 +23,19 @@ public class HomeController : Controller
         return View();
     }
 
-    /*public IActionResult GeneralSearch(string searchType, string searchString)
+
+    public IActionResult GeneralSearch(string searchType, string searchString)
     {
         if (searchType == "Projects")
         {
             return RedirectToAction("Search", "Project", new { searchString });
         }
-        else if (searchType == " Tasks")
+        else if (searchType == "Tasks")
         {
+            //var url = Url.Action("Search", "Task", new { ""});
             return RedirectToAction("Search", "Task", new { searchString });
         }
-
         return RedirectToAction("Index", "Home");
-    }
-    */
-
-
-    //[HttpGet]
-    //public IActionResult GeneralSearch(string searchType, string searchString)
-    //{
-    //    // Assuming "Task" controller is correctly named. Adjust if it has a different name.
-    //    var controllerName = searchType == "Projects" ? "Project" : searchType == "Tasks" ? "Tasks" : "Home";
-    //    var actionName = "Search";
-
-    //    return RedirectToAction(actionName, controllerName, new { area = "ProjectManagement", searchString });
-    //}
-    //public IActionResult NotFound(int statusCode)
-    //{
-    //    if(statusCode == 404)
-    //    {
-    //        return View("NotFound");
-    //    }
-    //    return View("Error");
-    //}
-
-    [HttpGet]
-    public IActionResult GeneralSearch(string searchType, string searchString)
-    {
-        // Assuming "Task" controller is correctly named. Adjust if it has a different name.
-        var controllerName = searchType == "Projects" ? "Project" : searchType == "Task" ? "Task" : "Home";
-        var actionName = "Search";
-
-        return RedirectToAction(actionName, controllerName, new { area = "ProjectManagement", searchString });
     }
 
 
@@ -74,6 +45,18 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-    
+    public IActionResult NotFound(int statusCode)
+    {
+
+        if (statusCode == 404)
+        {
+            return View("NotFound");
+        }
+
+        return View("Error");
+    }
+
+
+
 }
 

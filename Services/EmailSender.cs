@@ -1,6 +1,7 @@
-﻿using SendGrid.Helpers.Mail;
+﻿using System;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using SendGrid;
-
+using SendGrid.Helpers.Mail;
 using Microsoft.AspNetCore.Identity.UI.Services;
 
 public class EmailSender : IEmailSender

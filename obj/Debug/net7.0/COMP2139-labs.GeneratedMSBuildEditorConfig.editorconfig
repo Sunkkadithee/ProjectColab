@@ -248,8 +248,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/RoleManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZU1hbmFnZXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/Shared/Components/ProjectSummary/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvUHJvamVjdFN1bW1hcnkvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/Shared/Components/UserRole/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvVXNlclJvbGUvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/Shared/DisplayTemplates/DateTime.cshtml]
@@ -282,6 +290,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/UserRoles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclJvbGVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/UserRoles/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclJvbGVzL01hbmFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/Views/_ViewImports.cshtml]
