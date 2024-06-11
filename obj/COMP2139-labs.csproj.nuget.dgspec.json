@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/COMP2139-labs.csproj": {}
+    "/Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/COMP2139-labs.csproj": {}
   },
   "projects": {
-    "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/COMP2139-labs.csproj": {
+    "/Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/COMP2139-labs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/COMP2139-labs.csproj",
+        "projectUniqueName": "/Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/COMP2139-labs.csproj",
         "projectName": "COMP2139-labs",
-        "projectPath": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/COMP2139-labs.csproj",
+        "projectPath": "/Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/COMP2139-labs.csproj",
         "packagesPath": "/Users/pang/.nuget/packages/",
-        "outputPath": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/obj/",
+        "outputPath": "/Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pang/.nuget/NuGet/NuGet.Config"

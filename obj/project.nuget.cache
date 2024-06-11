@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hll035fiyh8Wd9L70cEwdwiFT+AkIk4iG/3LU0mARxNscxusBX65Tsezs3jfs4B+iCZ3NE6dQUiuiCnifUi3Yw==",
+  "dgSpecHash": "bFDp3mtYePx6cbyjsKLAJ6xFrPT6BDZ2ds/2Q1cENb4uL6f4rcr7rT0W3B9V+aezcBU2E9+F8oyqm5ptq04ywg==",
   "success": true,
-  "projectFilePath": "/Users/pang/Desktop/2139Web Development/Lab1/COMP2139-Wednesday/COMP2139-labs.csproj",
+  "projectFilePath": "/Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/COMP2139-labs.csproj",
   "expectedPackageFiles": [
     "/Users/pang/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/pang/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

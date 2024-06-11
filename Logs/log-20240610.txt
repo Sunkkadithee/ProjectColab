@@ -1,0 +1,378 @@
+2024-06-10 23:42:14.434 -04:00 [ERR] An error occured when attempting to seed the roles for the system.
+MySqlConnector.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 892
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 532
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 1054
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 554
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 516
+   at Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect(String connectionString)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0(DbContextOptionsBuilder options) in /Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/Program.cs:line 22
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider, Action`2 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass17_0`1.<AddCoreServices>b__0(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Program.<Main>$(String[] args) in /Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/Program.cs:line 79
+2024-06-10 23:42:14.490 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'.
+2024-06-10 23:42:14.491 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Create.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Delete.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Details.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Edit.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Index.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Shared/DisplayTemplates/ProjectDescription.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Shared/DisplayTemplates/ProjectName.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Shared/DisplayTemplates/ProjectTaskTitle.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Create.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Delete.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Details.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Edit.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Index.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/_ViewImports.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/_ViewStart.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/About.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Details.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/RoleManager/Index.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Components/ProjectSummary/Default.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Components/UserRole/Default.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/DisplayTemplates/DateTime.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/NotFound.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Footer.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Header.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_LoginPartial.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Navbar.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/UserRoles/Index.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/UserRoles/Manage.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'.
+2024-06-10 23:42:14.492 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewStart.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_Layout.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'.
+2024-06-10 23:42:14.493 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'.
+2024-06-10 23:42:14.498 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-10 23:42:14.539 -04:00 [INF] User profile is available. Using '/Users/pang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-10 23:42:14.598 -04:00 [DBG] Hosting starting
+2024-06-10 23:42:14.600 -04:00 [DBG] Reading data from file '/Users/pang/.aspnet/DataProtection-Keys/key-a34867d5-3c2c-475c-a775-6ffd569b9203.xml'.
+2024-06-10 23:42:14.604 -04:00 [DBG] Reading data from file '/Users/pang/.aspnet/DataProtection-Keys/key-b44606de-f456-460f-82b7-fa2b2046f2b3.xml'.
+2024-06-10 23:42:14.606 -04:00 [DBG] Found key {a34867d5-3c2c-475c-a775-6ffd569b9203}.
+2024-06-10 23:42:14.608 -04:00 [DBG] Found key {b44606de-f456-460f-82b7-fa2b2046f2b3}.
+2024-06-10 23:42:14.610 -04:00 [DBG] Considering key {b44606de-f456-460f-82b7-fa2b2046f2b3} with expiration date 2024-07-07 02:36:36Z as default key.
+2024-06-10 23:42:14.611 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-10 23:42:14.612 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-10 23:42:14.612 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-10 23:42:14.613 -04:00 [DBG] Using key {b44606de-f456-460f-82b7-fa2b2046f2b3} as the default key.
+2024-06-10 23:42:14.613 -04:00 [DBG] Key ring with default key {b44606de-f456-460f-82b7-fa2b2046f2b3} was loaded during application startup.
+2024-06-10 23:42:14.934 -04:00 [INF] Now listening on: https://localhost:7154
+2024-06-10 23:42:14.934 -04:00 [INF] Now listening on: http://localhost:5288
+2024-06-10 23:42:14.935 -04:00 [DBG] Loaded hosting startup assembly COMP2139-labs
+2024-06-10 23:42:14.936 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-10 23:42:14.936 -04:00 [INF] Hosting environment: Development
+2024-06-10 23:42:14.936 -04:00 [INF] Content root path: /Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday
+2024-06-10 23:42:14.936 -04:00 [DBG] Hosting started
+2024-06-10 23:42:14.973 -04:00 [DBG] Connection id "0HN49P1U2VCRP" accepted.
+2024-06-10 23:42:14.974 -04:00 [DBG] Connection id "0HN49P1U2VCRP" started.
+2024-06-10 23:42:15.971 -04:00 [DBG] Connection id "0HN49P1U2VCRP" received FIN.
+2024-06-10 23:42:15.976 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-06-10 23:42:15.979 -04:00 [DBG] Connection id "0HN49P1U2VCRP" stopped.
+2024-06-10 23:42:15.982 -04:00 [DBG] Connection id "0HN49P1U2VCRP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-10 23:42:16.331 -04:00 [DBG] Connection id "0HN49P1U2VCRQ" accepted.
+2024-06-10 23:42:16.332 -04:00 [DBG] Connection id "0HN49P1U2VCRQ" started.
+2024-06-10 23:42:16.337 -04:00 [DBG] Connection id "0HN49P1U2VCRR" accepted.
+2024-06-10 23:42:16.337 -04:00 [DBG] Connection id "0HN49P1U2VCRR" started.
+2024-06-10 23:42:16.446 -04:00 [DBG] Connection 0HN49P1U2VCRQ established using the following protocol: "Tls12"
+2024-06-10 23:42:16.446 -04:00 [DBG] Connection 0HN49P1U2VCRR established using the following protocol: "Tls12"
+2024-06-10 23:42:16.519 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/ - -
+2024-06-10 23:42:16.520 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-10 23:42:16.521 -04:00 [DBG] The request path / does not match a supported file type
+2024-06-10 23:42:16.544 -04:00 [DBG] 1 candidate(s) found for the request path '/'
+2024-06-10 23:42:16.555 -04:00 [DBG] Endpoint 'COMP2139_labs.Controllers.HomeController.Index (COMP2139-labs)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/'
+2024-06-10 23:42:16.556 -04:00 [DBG] Request matched endpoint 'COMP2139_labs.Controllers.HomeController.Index (COMP2139-labs)'
+2024-06-10 23:42:16.569 -04:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2024-06-10 23:42:16.571 -04:00 [INF] Executing endpoint 'COMP2139_labs.Controllers.HomeController.Index (COMP2139-labs)'
+2024-06-10 23:42:16.593 -04:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller COMP2139_labs.Controllers.HomeController (COMP2139-labs).
+2024-06-10 23:42:16.593 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-10 23:42:16.594 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-06-10 23:42:16.594 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-06-10 23:42:16.594 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-10 23:42:16.594 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-06-10 23:42:16.595 -04:00 [DBG] Executing controller factory for controller COMP2139_labs.Controllers.HomeController (COMP2139-labs)
+2024-06-10 23:42:16.596 -04:00 [DBG] Executed controller factory for controller COMP2139_labs.Controllers.HomeController (COMP2139-labs)
+2024-06-10 23:42:16.597 -04:00 [DBG] View lookup cache miss for view 'Index' in controller 'Home'.
+2024-06-10 23:42:16.600 -04:00 [INF] Executing ViewResult, running view Index.
+2024-06-10 23:42:16.602 -04:00 [DBG] The view path '/Views/Home/Index.cshtml' was found in 3.1367ms.
+2024-06-10 23:42:16.613 -04:00 [DBG] View lookup cache miss for view '_Layout' in controller 'Home'.
+2024-06-10 23:42:16.675 -04:00 [DBG] View lookup cache miss for view '_Header' in controller 'Home'.
+2024-06-10 23:42:16.676 -04:00 [DBG] View lookup cache miss for view '_Navbar' in controller 'Home'.
+2024-06-10 23:42:28.438 -04:00 [ERR] An error occured when attempting to seed the roles for the system.
+MySqlConnector.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 892
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 532
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 1054
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 554
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 516
+   at Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect(String connectionString)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0(DbContextOptionsBuilder options) in /Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/Program.cs:line 22
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider, Action`2 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass17_0`1.<AddCoreServices>b__0(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Program.<Main>$(String[] args) in /Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday/Program.cs:line 79
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'.
+2024-06-10 23:42:28.500 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Create.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Delete.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Details.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Edit.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Project/Index.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Shared/DisplayTemplates/ProjectDescription.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Shared/DisplayTemplates/ProjectName.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Shared/DisplayTemplates/ProjectTaskTitle.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Create.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Delete.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Details.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Edit.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/Task/Index.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/_ViewImports.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/ProjectManagement/Views/_ViewStart.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/About.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Details.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/RoleManager/Index.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Components/ProjectSummary/Default.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Components/UserRole/Default.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/DisplayTemplates/DateTime.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/NotFound.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Footer.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Header.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_LoginPartial.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Navbar.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/UserRoles/Index.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/UserRoles/Manage.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'.
+2024-06-10 23:42:28.501 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewStart.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_Layout.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'.
+2024-06-10 23:42:28.502 -04:00 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'.
+2024-06-10 23:42:28.507 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-10 23:42:28.525 -04:00 [INF] User profile is available. Using '/Users/pang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-10 23:42:28.589 -04:00 [DBG] Hosting starting
+2024-06-10 23:42:28.591 -04:00 [DBG] Reading data from file '/Users/pang/.aspnet/DataProtection-Keys/key-a34867d5-3c2c-475c-a775-6ffd569b9203.xml'.
+2024-06-10 23:42:28.593 -04:00 [DBG] Reading data from file '/Users/pang/.aspnet/DataProtection-Keys/key-b44606de-f456-460f-82b7-fa2b2046f2b3.xml'.
+2024-06-10 23:42:28.595 -04:00 [DBG] Found key {a34867d5-3c2c-475c-a775-6ffd569b9203}.
+2024-06-10 23:42:28.597 -04:00 [DBG] Found key {b44606de-f456-460f-82b7-fa2b2046f2b3}.
+2024-06-10 23:42:28.599 -04:00 [DBG] Considering key {b44606de-f456-460f-82b7-fa2b2046f2b3} with expiration date 2024-07-07 02:36:36Z as default key.
+2024-06-10 23:42:28.600 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-10 23:42:28.601 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-10 23:42:28.601 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-10 23:42:28.601 -04:00 [DBG] Using key {b44606de-f456-460f-82b7-fa2b2046f2b3} as the default key.
+2024-06-10 23:42:28.602 -04:00 [DBG] Key ring with default key {b44606de-f456-460f-82b7-fa2b2046f2b3} was loaded during application startup.
+2024-06-10 23:42:28.905 -04:00 [INF] Now listening on: https://localhost:7154
+2024-06-10 23:42:28.906 -04:00 [INF] Now listening on: http://localhost:5288
+2024-06-10 23:42:28.906 -04:00 [DBG] Loaded hosting startup assembly COMP2139-labs
+2024-06-10 23:42:28.907 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-10 23:42:28.907 -04:00 [INF] Hosting environment: Development
+2024-06-10 23:42:28.907 -04:00 [INF] Content root path: /Users/pang/Desktop/Web Development/COMP2139-Wednesday/COMP2139-Wednesday
+2024-06-10 23:42:28.907 -04:00 [DBG] Hosting started
+2024-06-10 23:42:28.957 -04:00 [DBG] Connection id "0HN49P228AVV5" accepted.
+2024-06-10 23:42:28.958 -04:00 [DBG] Connection id "0HN49P228AVV5" started.
